@@ -1,0 +1,63 @@
+model:
+  model_id: "stabilityai/stable-diffusion-xl-base-1.0"
+  vae_id: "madebyollin/sdxl-vae-fp16-fix"
+  lora_repo: null
+  lora_weight_name: null
+  embedding_filename: null
+  embedding_token: []
+
+source:
+  source_images: null
+  source_latents: "./watercolor-latents"
+  recursive: false
+  max_width: null
+  max_height: null
+  encode_mode: "mean"
+
+generation:
+  prompt: "a portrait on a white background."
+  negative_prompt: "blurry, low quality, deformed, extra limbs, text, watermark"
+  height: 1024
+  width: 1024
+  num_inference_steps: 30
+  guidance_scale: 6.5
+  seed: 0
+  num_seeds: 1
+  seed_offset: 0
+  output_stem: null
+  pixel_render_scale: 1
+
+projection:
+  region_method: "felzenszwalb"
+  patch_size: 1
+  do_rotated: false
+  total_patches: 50000
+  top_k: 1
+  projection_start_frac: 0.7
+  projection_end_frac: 1.0
+  projection_every_n_steps: 1
+  alpha_start: 0.0
+  alpha_end: 0.1
+  dictionary_chunk_size: 8192
+  similarity_temperature: 0.10
+  preview_every_n_projections: 0
+  random_seed: 1234
+  region_candidate_count: 128
+  region_min_area: 1
+  region_max_area: 1200
+  region_max_bbox_h: 0
+  region_max_bbox_w: 0
+  debug_every_n_projections: 1
+  threshold_min_regions: 64
+  threshold_max_regions: 768
+  threshold_connectivity: 4
+  threshold_similarity_low: -0.25
+  threshold_similarity_high: 0.999
+  felzenszwalb_scale: 32.0
+  felzenszwalb_sigma: 0.8
+  felzenszwalb_min_size: 8
+
+output:
+  output_dir: "./outputs/render"
+  save_auxiliary_outputs: false
+  save_displayed_image: true

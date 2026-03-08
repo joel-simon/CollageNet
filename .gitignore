@@ -1,0 +1,39 @@
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local editor / IDE
+.vscode/
+.idea/
+
+# Local environment files
+.env
+.env.*
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# Generated outputs
+outputs/
+test/
+
+# Keep committed example assets
+!assets/
+!assets/example-cute-cat.jpg
