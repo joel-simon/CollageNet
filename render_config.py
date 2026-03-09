@@ -68,7 +68,7 @@ class ProjectionConfig:
     debug_every_n_projections: int = 1
     threshold_min_regions: int = 64
     threshold_max_regions: int = 768
-    threshold_connectivity: int = 4
+    threshold_connectivity: int = 8
     threshold_similarity_low: float = -0.25
     threshold_similarity_high: float = 0.999
     felzenszwalb_scale: float = 32.0
