@@ -19,6 +19,43 @@ Instead of stylizing only after generation, this project interrupts SDXL during 
 
 After diffusion, the final assignment map is used to render a sharp pixel collage from the original source images.
 
+## Installation
+
+The example below uses conda; any environment manager (`venv`, `mamba`, etc.) works.
+
+### 1. Create and activate an environment
+
+```bash
+conda create -n collagenet python=3.12
+conda activate collagenet
+```
+
+### 2. Install PyTorch
+
+```bash
+pip install torch
+```
+
+If `torch.cuda.is_available()` returns `False` after install on a machine with an NVIDIA GPU, the CUDA runtime bundled in the default wheel may be newer than your driver supports. Pick a driver-matched build from https://pytorch.org/get-started/locally/ — for example, for drivers that support up to CUDA 12.4:
+
+```bash
+pip install torch --index-url https://download.pytorch.org/whl/cu124
+```
+
+### 3. Install the remaining dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. (Optional) Notebook usage
+
+To run `main.ipynb`, install Jupyter or use a notebook-aware editor such as VS Code:
+
+```bash
+pip install jupyter
+```
+
 ## Quick Start
 
 Start from the default YAML config:

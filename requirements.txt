@@ -1,0 +1,15 @@
+# PyTorch is intentionally omitted: install it separately so you can pick
+# the wheel that matches your hardware (CUDA / ROCm / CPU). See the
+# Installation section of the README.
+
+diffusers
+transformers
+accelerate
+peft
+huggingface_hub
+safetensors
+pillow
+scikit-image
+numpy
+pyyaml
+ipython

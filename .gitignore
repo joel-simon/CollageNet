@@ -33,6 +33,7 @@ dist/
 # Generated outputs
 outputs/
 test/
+user-latents/
 
 # Keep committed example assets
 !assets/
