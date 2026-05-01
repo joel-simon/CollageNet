@@ -8,7 +8,7 @@ model:
 
 source:
   source_images: null
-  source_latents: "./watercolor-latents"
+  source_latents: "../watercolor-latents"
   recursive: false
   max_width: null
   max_height: null
@@ -58,6 +58,6 @@ projection:
   felzenszwalb_min_size: 8
 
 output:
-  output_dir: "./outputs/render"
+  output_dir: "../outputs/render"
   save_auxiliary_outputs: false
   save_displayed_image: true
